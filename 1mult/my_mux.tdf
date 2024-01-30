@@ -1,0 +1,35 @@
+PARAMETERS (length_mux);
+
+SUBDESIGN my_mux
+	(I[10..1][length_mux..1] : INPUT=GND;
+     J[3..1][length_mux..1] : INPUT=GND; 
+		 Sel[4..1] : input=VCC;
+		 Out_1 [length_mux-1..0] :output;
+         Out_2 [length_mux-1..0] :output;)
+BEGIN
+		CASE Sel[] IS
+			WHEN 0 => Out_1[] = I[1][length_mux..1];
+			WHEN 1 => Out_1[] = I[2][length_mux..1];
+			WHEN 2 => Out_1[] = I[3][length_mux..1];
+			WHEN 3 => Out_1[] = I[4][length_mux..1];
+            WHEN 4 => Out_1[] = I[5][length_mux..1];
+			WHEN 5 => Out_1[] = I[6][length_mux..1];
+			WHEN 6 => Out_1[] = I[7][length_mux..1];
+			WHEN 7 => Out_1[] = I[8][length_mux..1];
+            WHEN 8 => Out_1[] = I[9][length_mux..1];
+			WHEN 9 => Out_1[] = I[10][length_mux..1];
+		END CASE;
+
+		CASE Sel[] IS
+			WHEN 0 => Out_2[] = J[1][length_mux..1];
+			WHEN 1 => Out_2[] = J[1][length_mux..1];
+			WHEN 2 => Out_2[] = J[1][length_mux..1];
+			WHEN 3 => Out_2[] = J[1][length_mux..1];
+            WHEN 4 => Out_2[] = J[1][length_mux..1];
+			WHEN 5 => Out_2[] = J[2][length_mux..1];
+			WHEN 6 => Out_2[] = J[2][length_mux..1];
+			WHEN 7 => Out_2[] = J[2][length_mux..1];
+            WHEN 8 => Out_2[] = J[2][length_mux..1];
+			WHEN 9 => Out_2[] = J[3][length_mux..1];
+		END CASE;
+END;

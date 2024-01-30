@@ -1,0 +1,171 @@
+INCLUDE "lpm_mult.inc";
+INCLUDE "lpm_add_sub.inc";
+INCLUDE "lpm_counter.inc";
+INCLUDE "my_reg.inc";
+INCLUDE "my_mux.inc";
+
+
+
+CONSTANT sustem_bit = 4;
+CONSTANT width = 21;
+CONSTANT free_bit = 17;
+CONSTANT b0 = 95159;
+CONSTANT b1 = 1716512;
+CONSTANT b2 = 570958;
+CONSTANT b3 = 1716512;
+CONSTANT b4 = 95159;
+
+CONSTANT a0 = 131072;
+CONSTANT a1 = 440696;
+CONSTANT a2 = 1535859;
+CONSTANT a3 = 320408;
+CONSTANT a4 = 2028064;
+
+SUBDESIGN main
+	(Set, Reset: INPUT = GND;
+	 CLK : INPUT;
+     data[width-1..0]: INPUT;
+	 out[width-1..0]: OUTPUT;
+	 eout: OUTPUT;
+     E2: OUTPUT;
+     E3: OUTPUT;
+     E4: OUTPUT;
+     E5: OUTPUT;
+     Ev1: OUTPUT;
+     Ev2: OUTPUT;
+     Ev3: OUTPUT;
+     Ev4: OUTPUT;)
+VARIABLE
+
+mult_M: lpm_mult WITH
+	(LPM_WIDTHA = width,
+	 LPM_WIDTHB = width,
+	 LPM_WIDTHP = 2*width,
+	 LPM_WIDTHS = 2*width,
+	 INPUT_B_IS_CONSTANT = "YES",
+	 LPM_REPRESENTATION = "SIGNED");
+
+add_2, add_3, add_4, add_v1, add_v2, add_v3, add_v4, add_v5: lpm_add_sub WITH
+	(LPM_WIDTH = width,
+	 LPM_REPRESENTATION = "SIGNED",
+	 LPM_DIRECTION = "add",
+	 ONE_INPUT_IS_CONSTANT = "NO",
+	 LPM_PIPELINE = 0);
+
+counter : lpm_counter WITH
+    ( 						  LPM_WIDTH = 6,
+							  LPM_DIRECTION = "UP",
+							  LPM_MODULS = 40);
+
+reg_2, reg_3, reg_4, reg_5, reg_v1, reg_v2, reg_v3, reg_v4, reg_out: my_reg WITH (length_reg = width);
+
+mux_1, mux_2: my_mux WITH (length_mux = width);
+
+BEGIN
+	counter.clock = CLK;
+	CASE counter.Q[] IS
+		WHEN 2 => (Eout, E[5..2], Ev[4..1]) = (VCC, GND, GND, GND, GND, GND, GND, GND, GND);
+		WHEN 6 => (Eout, E[5..2], Ev[4..1]) = (GND, GND, GND, GND, VCC, GND, GND, GND, GND);
+        WHEN 10 => (Eout, E[5..2], Ev[4..1]) = (GND, GND, GND, VCC, GND, GND, GND, GND, GND);
+		WHEN 14 => (Eout, E[5..2], Ev[4..1]) = (GND, GND, VCC, GND, GND, GND, GND, GND, GND);
+		WHEN 18 => (Eout, E[5..2], Ev[4..1]) = (GND, VCC, GND, GND, GND, GND, GND, GND, GND);
+		WHEN 22 => (Eout, E[5..2], Ev[4..1]) = (GND, GND, GND, GND, GND, GND, GND, GND, VCC);
+		WHEN 26 => (Eout, E[5..2], Ev[4..1]) = (GND, GND, GND, GND, GND, GND, GND, VCC, GND);
+        WHEN 30 => (Eout, E[5..2], Ev[4..1]) = (GND, GND, GND, GND, GND, GND, VCC, GND, GND);
+        WHEN 34 => (Eout, E[5..2], Ev[4..1]) = (GND, GND, GND, GND, GND, VCC, GND, GND, GND);
+		WHEN OTHERS => (Eout, E[5..2], Ev[4..1]) = (GND, GND, GND, GND, GND, GND, GND, GND, GND);
+	END CASE;
+
+
+
+    reg_2.Enable = E2;
+	reg_3.Enable = E3;
+	reg_4.Enable = E4;
+    reg_5.Enable = E5;
+
+	reg_v1.Enable = Ev1;
+	reg_v2.Enable = Ev2;
+	reg_v3.Enable = Ev3;
+	reg_v4.Enable = Ev4;
+
+	reg_out.Enable = Eout;
+
+
+
+	(reg_2, reg_3, reg_4, reg_5, reg_v1, reg_v2, reg_v3, reg_v4, reg_out).Set = Set;
+
+	(reg_2, reg_3, reg_4, reg_5, reg_v1, reg_v2, reg_v3, reg_v4, reg_out).Reset = Reset;
+
+	(reg_2, reg_3, reg_4, reg_5, reg_v1, reg_v2, reg_v3, reg_v4, reg_out).CLK = CLK;
+
+
+
+	reg_2.Din[] = add_2.result[];
+	reg_3.Din[] = add_3.result[];
+	reg_4.Din[] = add_4.result[];
+    reg_5.Din[] = mult_M.result[2*width - sustem_bit-1..free_bit];
+
+	reg_v1.Din[] = add_v2.result[];
+	reg_v2.Din[] = add_v3.result[];
+	reg_v3.Din[] = add_v4.result[];
+	reg_v4.Din[] = add_v5.result[];	
+
+
+
+	mux_1.I[1][width..1]=b0;
+	mux_1.I[2][width..1]=b1;
+	mux_1.I[3][width..1]=b2;
+	mux_1.I[4][width..1]=b3;
+    mux_1.I[5][width..1]=b4;
+	mux_1.I[6][width..1]=GND;
+	mux_1.I[7][width..1]=a2;
+	mux_1.I[8][width..1]=a3;
+    mux_1.I[9][width..1]=a4;
+	mux_1.I[10][width..1]=GND;
+
+	mux_1.Sel[]=counter.Q[5..2];
+
+	mux_2.J[1][width..1]=data[];
+	mux_2.J[2][width..1]=reg_out.Q[];
+	mux_2.J[3][width..1]=GND;
+	
+	mux_2.Sel[]=counter.Q[5..2];
+
+
+
+	mult_M.dataa[]=mux_1.Out_1[width..1];
+	mult_M.datab[]=mux_2.Out_2[width..1];
+
+
+
+	add_v1.dataa[]=mult_M.result[2*width - sustem_bit-1..free_bit];
+	add_v1.datab[]=reg_v1.Q[];
+
+	add_v2.dataa[]=mult_M.result[2*width - sustem_bit-1..free_bit];
+	add_v2.datab[]=reg_2.Q[];
+
+    add_2.dataa[]=mult_M.result[2*width - sustem_bit-1..free_bit];
+	add_2.datab[]=reg_v2.Q[];
+
+    add_v3.dataa[]=mult_M.result[2*width - sustem_bit-1..free_bit];
+	add_v3.datab[]=reg_3.Q[];
+
+    add_3.dataa[]=mult_M.result[2*width - sustem_bit-1..free_bit];
+	add_3.datab[]=reg_v3.Q[];
+
+    add_v4.dataa[]=mult_M.result[2*width - sustem_bit-1..free_bit];
+	add_v4.datab[]=reg_4.Q[];
+
+    add_4.dataa[]=mult_M.result[2*width - sustem_bit-1..free_bit];
+	add_4.datab[]=reg_v4.Q[];
+
+    add_v5.dataa[]=mult_M.result[2*width - sustem_bit-1..free_bit];
+	add_v5.datab[]=reg_5.Q[];
+
+
+
+    reg_out.Din[] = add_v1.result[];
+	out[] = reg_out.Q[];
+
+END;
+

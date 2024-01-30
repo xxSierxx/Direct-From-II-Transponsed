@@ -1,0 +1,139 @@
+INCLUDE "lpm_add_sub.inc";
+INCLUDE "lpm_mult.inc";
+INCLUDE "lpm_counter.inc";
+INCLUDE "my_reg.inc";
+
+CONSTANT bit = 4;
+CONSTANT length = 21;
+CONSTANT not_integer = length - bit;
+
+CONSTANT b1 = 95159 ;
+CONSTANT b2 = 1716512;
+CONSTANT b3 = 570958;
+CONSTANT b4 = 1716512;
+CONSTANT b5 = 95159;
+
+CONSTANT a1 = 131072;
+CONSTANT a2 = 440696;
+CONSTANT a3 = 1535859;
+CONSTANT a4 = 320408;
+CONSTANT a5 = 2028064;
+
+SUBDESIGN main
+	(
+		Set, Reset	: INPUT = GND;
+		CLK 		: INPUT;
+		data[length-1..0]	: INPUT;
+		out[length-1..0]	: OUTPUT;
+		s : OUTPUT;
+	)
+VARIABLE
+mult_b1, mult_b2, mult_b3, mult_b4, mult_b5, 
+mult_a2, mult_a3, mult_a4, mult_a5 : lpm_mult WITH 
+												 (
+												 	LPM_WIDTHA = length,
+												 	LPM_WIDTHB = length,
+												 	LPM_WIDTHP = 2*length,
+												 	LPM_WIDTHS = 2*length,
+												 	INPUT_B_IS_CONSTANT = "YES",
+												 	LPM_REPRESENTATION = "SIGNED"
+												 );
+
+add_1, add_2, add_3, add_4, add_5, add_pr1, add_pr2, add_pr3
+ : lpm_add_sub WITH
+														(
+															LPM_WIDTH= length,
+															LPM_REPRESENTATION = "SIGNED",
+															LPM_DIRECTION = "add",
+															ONE_INPUT_IS_CONSTANT = "NO",
+															LPM_PIPELINE = 0
+														);
+
+counter : lpm_counter WITH
+						  (
+							  LPM_WIDTH = 4,
+							  LPM_DIRECTION = "UP",
+							  LPM_MODULS = 9
+						  );
+
+reg_1, reg_2, reg_3, reg_4 : my_reg WITH (length_reg = length);
+
+
+
+BEGIN
+	counter.clock = CLK;
+	CASE counter.Q[] IS
+		WHEN 0 => s = VCC;
+		WHEN OTHERS => s = GND;
+	END CASE;
+
+
+	reg_1.Enable = s;
+	reg_2.Enable = s;
+	reg_3.Enable = s;
+	reg_4.Enable = s;
+
+	(reg_1, reg_2, reg_3, reg_4).Set = Set; 
+	(reg_1, reg_2, reg_3, reg_4).Reset = Reset; 
+	(reg_1, reg_2, reg_3, reg_4).CLK = CLK; 
+
+	% Умножение для входа %
+	mult_b1.dataa[] = data[];
+	mult_b1.datab[] = b1;
+
+	mult_b2.dataa[] = data[];
+	mult_b2.datab[] = b2;
+
+	mult_b3.dataa[] = data[];
+	mult_b3.datab[] = b3;
+
+	mult_b4.dataa[] = data[];
+	mult_b4.datab[] = b4;
+
+	mult_b5.dataa[] = data[];
+	mult_b5.datab[] = b5;
+	
+	%Умножение для выхода%
+	mult_a2.dataa[] = out[];
+	mult_a2.datab[] = a2;
+
+	mult_a3.dataa[] = out[];
+	mult_a3.datab[] = a3;
+
+	mult_a4.dataa[] = out[];
+	mult_a4.datab[] = a4;
+
+	mult_a5.dataa[] = out[];
+	mult_a5.datab[] = a5;
+
+	
+	
+	add_5.dataa[] = mult_b5.result[2*length - bit-1..not_integer];
+	add_5.datab[] = mult_a5.result[2*length - bit-1..not_integer];
+	reg_4.Din[] = add_5.result[];
+
+
+	add_4.dataa[] = mult_b4.result[2*length - bit-1..not_integer];
+	add_4.datab[] = mult_a4.result[2*length - bit-1..not_integer];
+	add_pr1.dataa[] = reg_4.Q[];
+	add_pr1.datab[] = add_4.result[];
+	reg_3.Din[] = add_pr1.result[]; 
+
+	add_3.dataa[] = mult_b3.result[2*length - bit-1..not_integer];
+	add_3.datab[] = mult_a3.result[2*length - bit-1..not_integer];
+	add_pr2.dataa[] = add_3.result[];	
+	add_pr2.datab[] = reg_3.Q[];
+	reg_2.Din[] = add_pr2.result[];
+	
+	add_2.dataa[] = mult_b2.result[2*length - bit-1..not_integer];
+	add_2.datab[] = mult_a2.result[2*length - bit-1..not_integer];
+	add_pr3.dataa[] = reg_2.Q[];
+	add_pr3.datab[] = add_2.result[];
+	reg_1.Din[] = add_pr3.result[];
+
+	add_1.dataa[] = mult_b1.result[2*length - bit-1..not_integer];
+	add_1.datab[] = reg_1.Q[];	
+
+	out[] = add_1.result[];
+
+END;

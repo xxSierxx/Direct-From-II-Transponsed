@@ -1,0 +1,1028 @@
+Debug for fit_fastio_pin_reassign program (iteration 1):
+
+I/O delay matrix:-
+
+	Comb	Reg 	SU  	Pin 	Cout	Casc
+Clk 	N/A	38	N/A	33	N/A	N/A
+Clr 	N/A	46	N/A	41	N/A	N/A
+Pre 	N/A	46	N/A	41	N/A	N/A
+Ena 	N/A	N/A	28	N/A	N/A	N/A
+Ald 	N/A	46	N/A	41	N/A	N/A
+OE  	N/A	N/A	N/A	50	N/A	N/A
+Cin 	N/A	N/A	N/A	N/A	N/A	N/A
+Casc	N/A	N/A	N/A	N/A	N/A	N/A
+Pin 	31	N/A	114	N/A	N/A	N/A
+A   	N/A	N/A	23	26	N/A	N/A
+B   	N/A	N/A	N/A	N/A	N/A	N/A
+C   	N/A	N/A	N/A	N/A	N/A	N/A
+D   	N/A	N/A	N/A	N/A	N/A	N/A
+
+Global clock delay matrix:-
+
+	Comb	Reg 	SU  	Pin 	Cout	Casc
+Clk :	N/A	22	35	N/A	31	N/A
+Clr :	N/A	23	N/A	N/A	32	N/A
+Pre :	N/A	23	N/A	N/A	32	N/A
+Ena :	N/A	N/A	10	N/A	N/A	N/A
+Ald :	N/A	23	N/A	N/A	32	N/A
+OE  :	N/A	N/A	N/A	N/A	N/A	N/A
+Cin :	11	N/A	6	N/A	2	13
+Casc:	6	N/A	1	N/A	N/A	8
+Pin :	N/A	N/A	N/A	N/A	N/A	N/A
+A   :	19	N/A	14	N/A	9	21
+B   :	19	N/A	14	N/A	9	21
+C   :	19	N/A	14	N/A	N/A	21
+D   :	14	N/A	9	N/A	N/A	16
+
+I/O delay matrix:-
+
+	Comb	Reg 	SU  	Pin 	Cout	Casc
+Clk 	N/A	38	N/A	33	N/A	N/A
+Clr 	N/A	46	N/A	41	N/A	N/A
+Pre 	N/A	46	N/A	41	N/A	N/A
+Ena 	N/A	N/A	28	N/A	N/A	N/A
+Ald 	N/A	46	N/A	41	N/A	N/A
+OE  	N/A	N/A	N/A	50	N/A	N/A
+Cin 	N/A	N/A	N/A	N/A	N/A	N/A
+Casc	N/A	N/A	N/A	N/A	N/A	N/A
+Pin 	31	N/A	114	N/A	N/A	N/A
+A   	N/A	N/A	23	26	N/A	N/A
+B   	N/A	N/A	N/A	N/A	N/A	N/A
+C   	N/A	N/A	N/A	N/A	N/A	N/A
+D   	N/A	N/A	N/A	N/A	N/A	N/A
+
+Global clock delay matrix:-
+
+	Comb	Reg 	SU  	Pin 	Cout	Casc
+Clk :	N/A	22	35	N/A	31	N/A
+Clr :	N/A	23	N/A	N/A	32	N/A
+Pre :	N/A	23	N/A	N/A	32	N/A
+Ena :	N/A	N/A	10	N/A	N/A	N/A
+Ald :	N/A	23	N/A	N/A	32	N/A
+OE  :	N/A	N/A	N/A	N/A	N/A	N/A
+Cin :	11	N/A	6	N/A	2	13
+Casc:	6	N/A	1	N/A	N/A	8
+Pin :	N/A	N/A	N/A	N/A	N/A	N/A
+A   :	19	N/A	14	N/A	9	21
+B   :	19	N/A	14	N/A	9	21
+C   :	19	N/A	14	N/A	N/A	21
+D   :	14	N/A	9	N/A	N/A	16
+
+Threshold are: for Tsu - 9.600000ns and for Tco - 15.600000ns
+Global Tsu=-1(-1.000000), Tco=-1(-1.000000)
+
+
+Input/output cells:
+	J1_1 : IN
+	J1_2 : IN
+	J1_3 : IN
+	J1_4 : IN
+	J1_5 : IN
+	J1_6 : IN
+	J1_7 : IN
+	J1_8 : IN
+	J1_9 : IN
+	J1_10 : IN
+	J1_11 : IN
+	J1_12 : IN
+	J1_13 : IN
+	J1_14 : IN
+	J1_15 : IN
+	J1_16 : IN
+	J1_17 : IN
+	J1_18 : IN
+	J1_19 : IN
+	J1_20 : IN
+	J1_21 : IN
+	J2_1 : IN
+	J2_2 : IN
+	J2_3 : IN
+	J2_4 : IN
+	J2_5 : IN
+	J2_6 : IN
+	J2_7 : IN
+	J2_8 : IN
+	J2_9 : IN
+	J2_10 : IN
+	J2_11 : IN
+	J2_12 : IN
+	J2_13 : IN
+	J2_14 : IN
+	J2_15 : IN
+	J2_16 : IN
+	J2_17 : IN
+	J2_18 : IN
+	J2_19 : IN
+	J2_20 : IN
+	J2_21 : IN
+	Out21 : OUT
+	Out22 : OUT
+	Out23 : OUT
+	Out24 : OUT
+	Out25 : OUT
+	Out26 : OUT
+	Out27 : OUT
+	Out28 : OUT
+	Out29 : OUT
+	Out210 : OUT
+	Out211 : OUT
+	Out212 : OUT
+	Out213 : OUT
+	Out214 : OUT
+	Out215 : OUT
+	Out216 : OUT
+	Out217 : OUT
+	Out218 : OUT
+	Out219 : OUT
+	Out220 : OUT
+	Out221 : OUT
+	Sel1 : IN
+	Sel2 : IN
+	Sel3 : IN
+	Sel4 : IN
+
+Set clique dont_touch:
+
+Cell: J1_1, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_2, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_3, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_4, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_5, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_6, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_7, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_8, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_9, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_10, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_11, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_12, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_13, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_14, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_15, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_16, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_17, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_18, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_19, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_20, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J1_21, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_1, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_2, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_3, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_4, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_5, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_6, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_7, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_8, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_9, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_10, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_11, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_12, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_13, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_14, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_15, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_16, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_17, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_18, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_19, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_20, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: J2_21, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: Out21, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out22, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out23, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out24, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out25, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out26, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out27, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out28, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out29, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out210, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out211, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out212, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out213, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out214, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out215, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out216, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out217, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out218, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out219, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out220, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Out221, rdfbits: 3, fast_io bit: 0, periphery: 0,0
+Cell: Sel1, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: Sel2, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: Sel3, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: Sel4, rdfbits: 5, fast_io bit: 0, periphery: 0,0
+Cell: :1572, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1575, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1578, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1581, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1584, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1587, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1590, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1593, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1596, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1599, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1602, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1605, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1608, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1611, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1614, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1617, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1620, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1623, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1626, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: :1629, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+Cell: ~1632~1, rdfbits: 1050, fast_io bit: 0, periphery: 0,0
+Cell: ~1632~2, rdfbits: 1050, fast_io bit: 0, periphery: 0,0
+Cell: :1632, rdfbits: 50, fast_io bit: 0, periphery: 0,0
+
+
+Virtual pin individual set-up and clock-to-output times:
+For pin J1_1 delays are: tsu=-1, tco=-1;
+For pin J1_2 delays are: tsu=-1, tco=-1;
+For pin J1_3 delays are: tsu=-1, tco=-1;
+For pin J1_4 delays are: tsu=-1, tco=-1;
+For pin J1_5 delays are: tsu=-1, tco=-1;
+For pin J1_6 delays are: tsu=-1, tco=-1;
+For pin J1_7 delays are: tsu=-1, tco=-1;
+For pin J1_8 delays are: tsu=-1, tco=-1;
+For pin J1_9 delays are: tsu=-1, tco=-1;
+For pin J1_10 delays are: tsu=-1, tco=-1;
+For pin J1_11 delays are: tsu=-1, tco=-1;
+For pin J1_12 delays are: tsu=-1, tco=-1;
+For pin J1_13 delays are: tsu=-1, tco=-1;
+For pin J1_14 delays are: tsu=-1, tco=-1;
+For pin J1_15 delays are: tsu=-1, tco=-1;
+For pin J1_16 delays are: tsu=-1, tco=-1;
+For pin J1_17 delays are: tsu=-1, tco=-1;
+For pin J1_18 delays are: tsu=-1, tco=-1;
+For pin J1_19 delays are: tsu=-1, tco=-1;
+For pin J1_20 delays are: tsu=-1, tco=-1;
+For pin J1_21 delays are: tsu=-1, tco=-1;
+For pin J2_1 delays are: tsu=-1, tco=-1;
+For pin J2_2 delays are: tsu=-1, tco=-1;
+For pin J2_3 delays are: tsu=-1, tco=-1;
+For pin J2_4 delays are: tsu=-1, tco=-1;
+For pin J2_5 delays are: tsu=-1, tco=-1;
+For pin J2_6 delays are: tsu=-1, tco=-1;
+For pin J2_7 delays are: tsu=-1, tco=-1;
+For pin J2_8 delays are: tsu=-1, tco=-1;
+For pin J2_9 delays are: tsu=-1, tco=-1;
+For pin J2_10 delays are: tsu=-1, tco=-1;
+For pin J2_11 delays are: tsu=-1, tco=-1;
+For pin J2_12 delays are: tsu=-1, tco=-1;
+For pin J2_13 delays are: tsu=-1, tco=-1;
+For pin J2_14 delays are: tsu=-1, tco=-1;
+For pin J2_15 delays are: tsu=-1, tco=-1;
+For pin J2_16 delays are: tsu=-1, tco=-1;
+For pin J2_17 delays are: tsu=-1, tco=-1;
+For pin J2_18 delays are: tsu=-1, tco=-1;
+For pin J2_19 delays are: tsu=-1, tco=-1;
+For pin J2_20 delays are: tsu=-1, tco=-1;
+For pin J2_21 delays are: tsu=-1, tco=-1;
+For pin Out21 delays are: tsu=-1, tco=-1;
+For pin Out22 delays are: tsu=-1, tco=-1;
+For pin Out23 delays are: tsu=-1, tco=-1;
+For pin Out24 delays are: tsu=-1, tco=-1;
+For pin Out25 delays are: tsu=-1, tco=-1;
+For pin Out26 delays are: tsu=-1, tco=-1;
+For pin Out27 delays are: tsu=-1, tco=-1;
+For pin Out28 delays are: tsu=-1, tco=-1;
+For pin Out29 delays are: tsu=-1, tco=-1;
+For pin Out210 delays are: tsu=-1, tco=-1;
+For pin Out211 delays are: tsu=-1, tco=-1;
+For pin Out212 delays are: tsu=-1, tco=-1;
+For pin Out213 delays are: tsu=-1, tco=-1;
+For pin Out214 delays are: tsu=-1, tco=-1;
+For pin Out215 delays are: tsu=-1, tco=-1;
+For pin Out216 delays are: tsu=-1, tco=-1;
+For pin Out217 delays are: tsu=-1, tco=-1;
+For pin Out218 delays are: tsu=-1, tco=-1;
+For pin Out219 delays are: tsu=-1, tco=-1;
+For pin Out220 delays are: tsu=-1, tco=-1;
+For pin Out221 delays are: tsu=-1, tco=-1;
+For pin Sel1 delays are: tsu=-1, tco=-1;
+For pin Sel2 delays are: tsu=-1, tco=-1;
+For pin Sel3 delays are: tsu=-1, tco=-1;
+For pin Sel4 delays are: tsu=-1, tco=-1;
+
+
+Cells driven by pins
+	:1572 is driven by J1_1
+	:1575 is driven by J1_2
+	:1578 is driven by J1_3
+	:1581 is driven by J1_4
+	:1584 is driven by J1_5
+	:1587 is driven by J1_6
+	:1590 is driven by J1_7
+	:1593 is driven by J1_8
+	:1596 is driven by J1_9
+	:1599 is driven by J1_10
+	:1602 is driven by J1_11
+	:1605 is driven by J1_12
+	:1608 is driven by J1_13
+	:1611 is driven by J1_14
+	:1614 is driven by J1_15
+	:1617 is driven by J1_16
+	:1620 is driven by J1_17
+	:1623 is driven by J1_18
+	:1626 is driven by J1_19
+	:1629 is driven by J1_20
+	:1632 is driven by J1_21
+	:1572 is driven by J2_1
+	:1575 is driven by J2_2
+	:1578 is driven by J2_3
+	:1581 is driven by J2_4
+	:1584 is driven by J2_5
+	:1587 is driven by J2_6
+	:1590 is driven by J2_7
+	:1593 is driven by J2_8
+	:1596 is driven by J2_9
+	:1599 is driven by J2_10
+	:1602 is driven by J2_11
+	:1605 is driven by J2_12
+	:1608 is driven by J2_13
+	:1611 is driven by J2_14
+	:1614 is driven by J2_15
+	:1617 is driven by J2_16
+	:1620 is driven by J2_17
+	:1623 is driven by J2_18
+	:1626 is driven by J2_19
+	:1629 is driven by J2_20
+	:1632 is driven by J2_21
+	~1632~1 is driven by Sel1
+	~1632~2 is driven by Sel1
+	~1632~1 is driven by Sel2
+	~1632~2 is driven by Sel2
+	~1632~1 is driven by Sel3
+	~1632~2 is driven by Sel3
+	~1632~1 is driven by Sel4
+	~1632~2 is driven by Sel4
+
+
+Cells driving pins
+	:1572 drives Out21
+	:1575 drives Out22
+	:1578 drives Out23
+	:1581 drives Out24
+	:1584 drives Out25
+	:1587 drives Out26
+	:1590 drives Out27
+	:1593 drives Out28
+	:1596 drives Out29
+	:1599 drives Out210
+	:1602 drives Out211
+	:1605 drives Out212
+	:1608 drives Out213
+	:1611 drives Out214
+	:1614 drives Out215
+	:1617 drives Out216
+	:1620 drives Out217
+	:1623 drives Out218
+	:1626 drives Out219
+	:1629 drives Out220
+	:1632 drives Out221
+
+
+FAST I/O assignement after cleaning up:
+J1_1: fast_io=0
+J1_2: fast_io=0
+J1_3: fast_io=0
+J1_4: fast_io=0
+J1_5: fast_io=0
+J1_6: fast_io=0
+J1_7: fast_io=0
+J1_8: fast_io=0
+J1_9: fast_io=0
+J1_10: fast_io=0
+J1_11: fast_io=0
+J1_12: fast_io=0
+J1_13: fast_io=0
+J1_14: fast_io=0
+J1_15: fast_io=0
+J1_16: fast_io=0
+J1_17: fast_io=0
+J1_18: fast_io=0
+J1_19: fast_io=0
+J1_20: fast_io=0
+J1_21: fast_io=0
+J2_1: fast_io=0
+J2_2: fast_io=0
+J2_3: fast_io=0
+J2_4: fast_io=0
+J2_5: fast_io=0
+J2_6: fast_io=0
+J2_7: fast_io=0
+J2_8: fast_io=0
+J2_9: fast_io=0
+J2_10: fast_io=0
+J2_11: fast_io=0
+J2_12: fast_io=0
+J2_13: fast_io=0
+J2_14: fast_io=0
+J2_15: fast_io=0
+J2_16: fast_io=0
+J2_17: fast_io=0
+J2_18: fast_io=0
+J2_19: fast_io=0
+J2_20: fast_io=0
+J2_21: fast_io=0
+Out21: fast_io=0
+Out22: fast_io=0
+Out23: fast_io=0
+Out24: fast_io=0
+Out25: fast_io=0
+Out26: fast_io=0
+Out27: fast_io=0
+Out28: fast_io=0
+Out29: fast_io=0
+Out210: fast_io=0
+Out211: fast_io=0
+Out212: fast_io=0
+Out213: fast_io=0
+Out214: fast_io=0
+Out215: fast_io=0
+Out216: fast_io=0
+Out217: fast_io=0
+Out218: fast_io=0
+Out219: fast_io=0
+Out220: fast_io=0
+Out221: fast_io=0
+Sel1: fast_io=0
+Sel2: fast_io=0
+Sel3: fast_io=0
+Sel4: fast_io=0
+
+
+Layer-by-layer logic: fast_io=0
+
+Layer 0
+	J1_1, RDF bits: 5, lab#=0
+	J1_2, RDF bits: 5, lab#=0
+	J1_3, RDF bits: 5, lab#=0
+	J1_4, RDF bits: 5, lab#=0
+	J1_5, RDF bits: 5, lab#=0
+	J1_6, RDF bits: 5, lab#=0
+	J1_7, RDF bits: 5, lab#=0
+	J1_8, RDF bits: 5, lab#=0
+	J1_9, RDF bits: 5, lab#=0
+	J1_10, RDF bits: 5, lab#=0
+	J1_11, RDF bits: 5, lab#=0
+	J1_12, RDF bits: 5, lab#=0
+	J1_13, RDF bits: 5, lab#=0
+	J1_14, RDF bits: 5, lab#=0
+	J1_15, RDF bits: 5, lab#=0
+	J1_16, RDF bits: 5, lab#=0
+	J1_17, RDF bits: 5, lab#=0
+	J1_18, RDF bits: 5, lab#=0
+	J1_19, RDF bits: 5, lab#=0
+	J1_20, RDF bits: 5, lab#=0
+	J1_21, RDF bits: 5, lab#=0
+	J2_1, RDF bits: 5, lab#=0
+	J2_2, RDF bits: 5, lab#=0
+	J2_3, RDF bits: 5, lab#=0
+	J2_4, RDF bits: 5, lab#=0
+	J2_5, RDF bits: 5, lab#=0
+	J2_6, RDF bits: 5, lab#=0
+	J2_7, RDF bits: 5, lab#=0
+	J2_8, RDF bits: 5, lab#=0
+	J2_9, RDF bits: 5, lab#=0
+	J2_10, RDF bits: 5, lab#=0
+	J2_11, RDF bits: 5, lab#=0
+	J2_12, RDF bits: 5, lab#=0
+	J2_13, RDF bits: 5, lab#=0
+	J2_14, RDF bits: 5, lab#=0
+	J2_15, RDF bits: 5, lab#=0
+	J2_16, RDF bits: 5, lab#=0
+	J2_17, RDF bits: 5, lab#=0
+	J2_18, RDF bits: 5, lab#=0
+	J2_19, RDF bits: 5, lab#=0
+	J2_20, RDF bits: 5, lab#=0
+	J2_21, RDF bits: 5, lab#=0
+	Out21, RDF bits: 3, lab#=0
+	Out22, RDF bits: 3, lab#=0
+	Out23, RDF bits: 3, lab#=0
+	Out24, RDF bits: 3, lab#=0
+	Out25, RDF bits: 3, lab#=0
+	Out26, RDF bits: 3, lab#=0
+	Out27, RDF bits: 3, lab#=0
+	Out28, RDF bits: 3, lab#=0
+	Out29, RDF bits: 3, lab#=0
+	Out210, RDF bits: 3, lab#=0
+	Out211, RDF bits: 3, lab#=0
+	Out212, RDF bits: 3, lab#=0
+	Out213, RDF bits: 3, lab#=0
+	Out214, RDF bits: 3, lab#=0
+	Out215, RDF bits: 3, lab#=0
+	Out216, RDF bits: 3, lab#=0
+	Out217, RDF bits: 3, lab#=0
+	Out218, RDF bits: 3, lab#=0
+	Out219, RDF bits: 3, lab#=0
+	Out220, RDF bits: 3, lab#=0
+	Out221, RDF bits: 3, lab#=0
+	Sel1, RDF bits: 5, lab#=0
+	Sel2, RDF bits: 5, lab#=0
+	Sel3, RDF bits: 5, lab#=0
+	Sel4, RDF bits: 5, lab#=0
+
+Layer 1
+	:1572, RDF bits: 50, lab#=0
+	:1575, RDF bits: 50, lab#=0
+	:1578, RDF bits: 50, lab#=0
+	:1581, RDF bits: 50, lab#=0
+	:1584, RDF bits: 50, lab#=0
+	:1587, RDF bits: 50, lab#=0
+	:1590, RDF bits: 50, lab#=0
+	:1593, RDF bits: 50, lab#=0
+	:1596, RDF bits: 50, lab#=0
+	:1599, RDF bits: 50, lab#=0
+	:1602, RDF bits: 50, lab#=0
+	:1605, RDF bits: 50, lab#=0
+	:1608, RDF bits: 50, lab#=0
+	:1611, RDF bits: 50, lab#=0
+	:1614, RDF bits: 50, lab#=0
+	:1617, RDF bits: 50, lab#=0
+	:1620, RDF bits: 50, lab#=0
+	:1623, RDF bits: 50, lab#=0
+	:1626, RDF bits: 50, lab#=0
+	:1629, RDF bits: 50, lab#=0
+	~1632~1, RDF bits: 1050, lab#=0
+	~1632~2, RDF bits: 1050, lab#=0
+	:1632, RDF bits: 50, lab#=0
+
+
+Physical pins available:
+row: 0, col: -1 RDF: 800003c7
+row: 0, col: -1 RDF: 800003c7
+row: 0, col: -1 RDF: 800003c7
+row: 0, col: -1 RDF: 800003c7
+row: 0, col: -1 RDF: 800003c7
+row: 0, col: -1 RDF: 800003c7
+row: 0, col: -1 RDF: 800003c7
+row: 0, col: -1 RDF: 800003c7
+row: 1, col: -1 RDF: 800003c7
+row: 1, col: -1 RDF: 800003c7
+row: 1, col: -1 RDF: 800003c7
+row: 1, col: -1 RDF: 800003c7
+row: 1, col: -1 RDF: 800003c7
+row: 1, col: -1 RDF: 800003c7
+row: 1, col: -1 RDF: 800003c7
+row: 2, col: -1 RDF: 800003c7
+row: 2, col: -1 RDF: 800003c7
+row: 2, col: -1 RDF: 800003c7
+row: 2, col: -1 RDF: 800003c7
+row: 2, col: -1 RDF: 800003c7
+row: 2, col: -1 RDF: 800003c7
+row: -1, col: 1 RDF: 800003c7
+row: -1, col: 3 RDF: 800003c7
+row: -1, col: 4 RDF: 800003c7
+row: -1, col: 5 RDF: 800003c7
+row: -1, col: 6 RDF: 800003c7
+row: -1, col: 7 RDF: 800003c7
+row: -1, col: 8 RDF: 800003c7
+row: -1, col: 9 RDF: 800003c7
+row: -1, col: 10 RDF: 800003c7
+row: -1, col: 10 RDF: 800003c7
+row: -1, col: 11 RDF: 800003c7
+row: -1, col: 11 RDF: 800003c7
+row: -1, col: -1 RDF: 4600080d
+row: -1, col: -1 RDF: d
+row: -1, col: -1 RDF: 4600080d
+row: -1, col: 12 RDF: 800003c7
+row: -1, col: 13 RDF: 800003c7
+row: -1, col: 14 RDF: 800003c7
+row: -1, col: 15 RDF: 800003c7
+row: -1, col: 16 RDF: 800003c7
+row: -1, col: 17 RDF: 800003c7
+row: -1, col: 17 RDF: 800003c7
+row: -1, col: 18 RDF: 800003c7
+row: -1, col: 19 RDF: 800003c7
+row: -1, col: 20 RDF: 800003c7
+row: -1, col: 21 RDF: 800003c7
+row: -1, col: 22 RDF: 800003c7
+row: -1, col: 23 RDF: 800003c7
+row: 2, col: -1 RDF: 800003c7
+row: 2, col: -1 RDF: 800003c7
+row: 2, col: -1 RDF: 800003c7
+row: 2, col: -1 RDF: 800003c7
+row: 2, col: -1 RDF: 800003c7
+row: 2, col: -1 RDF: 800003c7
+row: 2, col: -1 RDF: 800003c7
+row: 2, col: -1 RDF: 800003c7
+row: 1, col: -1 RDF: 800003c7
+row: 1, col: -1 RDF: 800003c7
+row: 1, col: -1 RDF: 800003c7
+row: 1, col: -1 RDF: 800003c7
+row: 1, col: -1 RDF: 800003c7
+row: 1, col: -1 RDF: 800003c7
+row: 1, col: -1 RDF: 800003c7
+95.	14 (INIT_DONE)	row: 0, col: -1 RDF: 800003c7
+row: 0, col: -1 RDF: 800003c7
+row: 0, col: -1 RDF: 800003c7
+98.	11 (RDYnBUSY)	row: 0, col: -1 RDF: 800003c7
+row: 0, col: -1 RDF: 800003c7
+row: 0, col: -1 RDF: 800003c7
+row: 0, col: -1 RDF: 800003c7
+102.	7 (CLKUSR)	row: 0, col: -1 RDF: 800003c7
+109.	144 (nCS)	row: -1, col: 23 RDF: 800003c7
+110.	143 (CS)	row: -1, col: 23 RDF: 800003c7
+111.	142 (nWS)	row: -1, col: 22 RDF: 800003c7
+112.	141 (nRS)	row: -1, col: 21 RDF: 800003c7
+row: -1, col: 20 RDF: 800003c7
+row: -1, col: 19 RDF: 800003c7
+row: -1, col: 18 RDF: 800003c7
+row: -1, col: 18 RDF: 800003c7
+row: -1, col: 17 RDF: 800003c7
+row: -1, col: 16 RDF: 800003c7
+row: -1, col: 15 RDF: 800003c7
+row: -1, col: 14 RDF: 800003c7
+row: -1, col: 13 RDF: 800003c7
+125.	128 (DEV_OE)	row: -1, col: 12 RDF: 800003c7
+row: -1, col: -1 RDF: 4600080d
+row: -1, col: -1 RDF: d
+row: -1, col: -1 RDF: 4600080d
+131.	122 (DEV_CLRn)	row: -1, col: 11 RDF: 800003c7
+row: -1, col: 9 RDF: 800003c7
+row: -1, col: 8 RDF: 800003c7
+row: -1, col: 7 RDF: 800003c7
+row: -1, col: 6 RDF: 800003c7
+row: -1, col: 5 RDF: 800003c7
+137.	116 (DATA7)	row: -1, col: 4 RDF: 800003c7
+139.	114 (DATA6)	row: -1, col: 3 RDF: 800003c7
+140.	113 (DATA5)	row: -1, col: 2 RDF: 800003c7
+141.	112 (DATA4)	row: -1, col: 2 RDF: 800003c7
+142.	111 (DATA3)	row: -1, col: 1 RDF: 800003c7
+143.	110 (DATA2)	row: -1, col: 0 RDF: 800003c7
+144.	109 (DATA1)	row: -1, col: 0 RDF: 800003c7
+
+Sorted pins:
+
+Pin Sel1: Link strength=2208, fast_io=0, group No.=0
+Pin Sel2: Link strength=2208, fast_io=0, group No.=0
+Pin Sel3: Link strength=2208, fast_io=0, group No.=0
+Pin Sel4: Link strength=2208, fast_io=0, group No.=0
+Pin J1_1: Link strength=1216, fast_io=0, group No.=0
+Pin J1_2: Link strength=1216, fast_io=0, group No.=0
+Pin J1_3: Link strength=1216, fast_io=0, group No.=0
+Pin J1_4: Link strength=1216, fast_io=0, group No.=0
+Pin J1_5: Link strength=1216, fast_io=0, group No.=0
+Pin J1_6: Link strength=1216, fast_io=0, group No.=0
+Pin J1_7: Link strength=1216, fast_io=0, group No.=0
+Pin J1_8: Link strength=1216, fast_io=0, group No.=0
+Pin J1_9: Link strength=1216, fast_io=0, group No.=0
+Pin J1_10: Link strength=1216, fast_io=0, group No.=0
+Pin J1_11: Link strength=1216, fast_io=0, group No.=0
+Pin J1_12: Link strength=1216, fast_io=0, group No.=0
+Pin J1_13: Link strength=1216, fast_io=0, group No.=0
+Pin J1_14: Link strength=1216, fast_io=0, group No.=0
+Pin J1_15: Link strength=1216, fast_io=0, group No.=0
+Pin J1_16: Link strength=1216, fast_io=0, group No.=0
+Pin J1_17: Link strength=1216, fast_io=0, group No.=0
+Pin J1_18: Link strength=1216, fast_io=0, group No.=0
+Pin J1_19: Link strength=1216, fast_io=0, group No.=0
+Pin J1_20: Link strength=1216, fast_io=0, group No.=0
+Pin J1_21: Link strength=1216, fast_io=0, group No.=0
+Pin J2_1: Link strength=1216, fast_io=0, group No.=0
+Pin J2_2: Link strength=1216, fast_io=0, group No.=0
+Pin J2_3: Link strength=1216, fast_io=0, group No.=0
+Pin J2_4: Link strength=1216, fast_io=0, group No.=0
+Pin J2_5: Link strength=1216, fast_io=0, group No.=0
+Pin J2_6: Link strength=1216, fast_io=0, group No.=0
+Pin J2_7: Link strength=1216, fast_io=0, group No.=0
+Pin J2_8: Link strength=1216, fast_io=0, group No.=0
+Pin J2_9: Link strength=1216, fast_io=0, group No.=0
+Pin J2_10: Link strength=1216, fast_io=0, group No.=0
+Pin J2_11: Link strength=1216, fast_io=0, group No.=0
+Pin J2_12: Link strength=1216, fast_io=0, group No.=0
+Pin J2_13: Link strength=1216, fast_io=0, group No.=0
+Pin J2_14: Link strength=1216, fast_io=0, group No.=0
+Pin J2_15: Link strength=1216, fast_io=0, group No.=0
+Pin J2_16: Link strength=1216, fast_io=0, group No.=0
+Pin J2_17: Link strength=1216, fast_io=0, group No.=0
+Pin J2_18: Link strength=1216, fast_io=0, group No.=0
+Pin J2_19: Link strength=1216, fast_io=0, group No.=0
+Pin J2_20: Link strength=1216, fast_io=0, group No.=0
+Pin J2_21: Link strength=1216, fast_io=0, group No.=0
+Pin Out21: Link strength=1216, fast_io=0, group No.=0
+Pin Out22: Link strength=1216, fast_io=0, group No.=0
+Pin Out23: Link strength=1216, fast_io=0, group No.=0
+Pin Out24: Link strength=1216, fast_io=0, group No.=0
+Pin Out25: Link strength=1216, fast_io=0, group No.=0
+Pin Out26: Link strength=1216, fast_io=0, group No.=0
+Pin Out27: Link strength=1216, fast_io=0, group No.=0
+Pin Out28: Link strength=1216, fast_io=0, group No.=0
+Pin Out29: Link strength=1216, fast_io=0, group No.=0
+Pin Out210: Link strength=1216, fast_io=0, group No.=0
+Pin Out211: Link strength=1216, fast_io=0, group No.=0
+Pin Out212: Link strength=1216, fast_io=0, group No.=0
+Pin Out213: Link strength=1216, fast_io=0, group No.=0
+Pin Out214: Link strength=1216, fast_io=0, group No.=0
+Pin Out215: Link strength=1216, fast_io=0, group No.=0
+Pin Out216: Link strength=1216, fast_io=0, group No.=0
+Pin Out217: Link strength=1216, fast_io=0, group No.=0
+Pin Out218: Link strength=1216, fast_io=0, group No.=0
+Pin Out219: Link strength=1216, fast_io=0, group No.=0
+Pin Out220: Link strength=1216, fast_io=0, group No.=0
+Pin Out221: Link strength=1216, fast_io=0, group No.=0
+
+Output pin initial assignments:
+
+Initially output pin Out21 is assigned to pin 102(index:7)
+Initially output pin Out22 is assigned to pin 101(index:8)
+Initially output pin Out23 is assigned to pin 100(index:9)
+Initially output pin Out24 is assigned to pin 99(index:10)
+Initially output pin Out25 is assigned to pin 98(index:11)
+Initially output pin Out26 is assigned to pin 97(index:12)
+Initially output pin Out27 is assigned to pin 96(index:13)
+Initially output pin Out28 is assigned to pin 95(index:14)
+Initially output pin Out29 is assigned to pin 92(index:17)
+Initially output pin Out210 is assigned to pin 91(index:18)
+Initially output pin Out211 is assigned to pin 90(index:19)
+Initially output pin Out212 is assigned to pin 89(index:20)
+Initially output pin Out213 is assigned to pin 88(index:21)
+Initially output pin Out214 is assigned to pin 87(index:22)
+Initially output pin Out215 is assigned to pin 86(index:23)
+Initially output pin Out216 is assigned to pin 83(index:26)
+Initially output pin Out217 is assigned to pin 82(index:27)
+Initially output pin Out218 is assigned to pin 81(index:28)
+Initially output pin Out219 is assigned to pin 80(index:29)
+Initially output pin Out220 is assigned to pin 79(index:30)
+Initially output pin Out221 is assigned to pin 78(index:31)
+
+All the rest pin assignments:
+
+Initially pin Sel1 is assigned to pin 14(index:95, cost:16961)
+Initially pin Sel2 is assigned to pin 13(index:96, cost:23361)
+Initially pin Sel3 is assigned to pin 12(index:97, cost:29761)
+Initially pin Sel4 is assigned to pin 11(index:98, cost:36161)
+Initially pin J1_1 is assigned to pin 10(index:99, cost:23681)
+Initially pin J1_2 is assigned to pin 9(index:100, cost:25281)
+Initially pin J1_3 is assigned to pin 8(index:101, cost:26881)
+Initially pin J1_4 is assigned to pin 7(index:102, cost:28481)
+Initially pin J1_5 is assigned to pin 23(index:86, cost:16001)
+Initially pin J1_6 is assigned to pin 22(index:87, cost:17601)
+Initially pin J1_7 is assigned to pin 21(index:88, cost:19201)
+Initially pin J1_8 is assigned to pin 20(index:89, cost:20801)
+Initially pin J1_9 is assigned to pin 19(index:90, cost:24321)
+Initially pin J1_10 is assigned to pin 18(index:91, cost:25921)
+Initially pin J1_11 is assigned to pin 17(index:92, cost:27521)
+Initially pin J1_12 is assigned to pin 33(index:76, cost:19841)
+Initially pin J1_13 is assigned to pin 32(index:77, cost:21441)
+Initially pin J1_14 is assigned to pin 31(index:78, cost:23041)
+Initially pin J1_15 is assigned to pin 30(index:79, cost:24641)
+Initially pin J1_16 is assigned to pin 29(index:80, cost:28161)
+Initially pin J1_17 is assigned to pin 28(index:81, cost:29761)
+Initially pin J1_18 is assigned to pin 27(index:82, cost:31361)
+Initially pin J1_19 is assigned to pin 26(index:83, cost:32961)
+Initially pin J1_20 is assigned to pin 73(index:36, cost:8161)
+Initially pin J1_21 is assigned to pin 111(index:142, cost:8321)
+Initially pin J2_1 is assigned to pin 72(index:37, cost:8801)
+Initially pin J2_2 is assigned to pin 114(index:139, cost:8961)
+Initially pin J2_3 is assigned to pin 70(index:39, cost:8961)
+Initially pin J2_4 is assigned to pin 116(index:137, cost:9121)
+Initially pin J2_5 is assigned to pin 69(index:40, cost:9121)
+Initially pin J2_6 is assigned to pin 117(index:136, cost:9281)
+Initially pin J2_7 is assigned to pin 68(index:41, cost:9281)
+Initially pin J2_8 is assigned to pin 118(index:135, cost:9441)
+Initially pin J2_9 is assigned to pin 67(index:42, cost:9441)
+Initially pin J2_10 is assigned to pin 119(index:134, cost:9601)
+Initially pin J2_11 is assigned to pin 65(index:44, cost:9601)
+Initially pin J2_12 is assigned to pin 120(index:133, cost:9761)
+Initially pin J2_13 is assigned to pin 64(index:45, cost:9761)
+Initially pin J2_14 is assigned to pin 121(index:132, cost:9921)
+Initially pin J2_15 is assigned to pin 63(index:46, cost:9921)
+Initially pin J2_16 is assigned to pin 62(index:47, cost:10081)
+Initially pin J2_17 is assigned to pin 60(index:49, cost:10081)
+Initially pin J2_18 is assigned to pin 59(index:50, cost:10241)
+Initially pin J2_19 is assigned to pin 122(index:131, cost:10401)
+Initially pin J2_20 is assigned to pin 51(index:58, cost:10081)
+Initially pin J2_21 is assigned to pin 128(index:125, cost:10241)
+Initially pin Out21 is assigned to pin 102(index:7, cost:38081)
+Initially pin Out22 is assigned to pin 101(index:8, cost:38081)
+Initially pin Out23 is assigned to pin 100(index:9, cost:38081)
+Initially pin Out24 is assigned to pin 99(index:10, cost:38081)
+Initially pin Out25 is assigned to pin 98(index:11, cost:36161)
+Initially pin Out26 is assigned to pin 97(index:12, cost:36161)
+Initially pin Out27 is assigned to pin 96(index:13, cost:36161)
+Initially pin Out28 is assigned to pin 95(index:14, cost:36161)
+Initially pin Out29 is assigned to pin 92(index:17, cost:33921)
+Initially pin Out210 is assigned to pin 91(index:18, cost:33921)
+Initially pin Out211 is assigned to pin 90(index:19, cost:33921)
+Initially pin Out212 is assigned to pin 89(index:20, cost:32001)
+Initially pin Out213 is assigned to pin 88(index:21, cost:32001)
+Initially pin Out214 is assigned to pin 87(index:22, cost:32001)
+Initially pin Out215 is assigned to pin 86(index:23, cost:32001)
+Initially pin Out216 is assigned to pin 83(index:26, cost:33601)
+Initially pin Out217 is assigned to pin 82(index:27, cost:33601)
+Initially pin Out218 is assigned to pin 81(index:28, cost:33601)
+Initially pin Out219 is assigned to pin 80(index:29, cost:33601)
+Initially pin Out220 is assigned to pin 79(index:30, cost:31681)
+Initially pin Out221 is assigned to pin 78(index:31, cost:31681)
+Initially pin Sel1 is assigned to pin 14(index:95, cost:75521)
+Initially pin Sel2 is assigned to pin 13(index:96, cost:75521)
+Initially pin Sel3 is assigned to pin 12(index:97, cost:75521)
+Initially pin Sel4 is assigned to pin 11(index:98, cost:75521)
+Initially pin J1_1 is assigned to pin 10(index:99, cost:42241)
+Initially pin J1_2 is assigned to pin 9(index:100, cost:42241)
+Initially pin J1_3 is assigned to pin 8(index:101, cost:42241)
+Initially pin J1_4 is assigned to pin 7(index:102, cost:42241)
+Initially pin J1_5 is assigned to pin 23(index:86, cost:34881)
+Initially pin J1_6 is assigned to pin 22(index:87, cost:34881)
+Initially pin J1_7 is assigned to pin 21(index:88, cost:34881)
+Initially pin J1_8 is assigned to pin 20(index:89, cost:34881)
+Initially pin J1_9 is assigned to pin 19(index:90, cost:36801)
+Initially pin J1_10 is assigned to pin 18(index:91, cost:36801)
+Initially pin J1_11 is assigned to pin 17(index:92, cost:36801)
+Initially pin J1_12 is assigned to pin 33(index:76, cost:35201)
+Initially pin J1_13 is assigned to pin 32(index:77, cost:35201)
+Initially pin J1_14 is assigned to pin 31(index:78, cost:35201)
+Initially pin J1_15 is assigned to pin 30(index:79, cost:35201)
+Initially pin J1_16 is assigned to pin 29(index:80, cost:37121)
+Initially pin J1_17 is assigned to pin 28(index:81, cost:37121)
+Initially pin J1_18 is assigned to pin 27(index:82, cost:37121)
+Initially pin J1_19 is assigned to pin 26(index:83, cost:37121)
+Initially pin J1_20 is assigned to pin 73(index:36, cost:10241)
+Initially pin J1_21 is assigned to pin 111(index:142, cost:10241)
+Initially pin J2_1 is assigned to pin 72(index:37, cost:10481)
+Initially pin J2_2 is assigned to pin 114(index:139, cost:10481)
+Initially pin J2_3 is assigned to pin 70(index:39, cost:10481)
+Initially pin J2_4 is assigned to pin 116(index:137, cost:10481)
+Initially pin J2_5 is assigned to pin 69(index:40, cost:10481)
+Initially pin J2_6 is assigned to pin 117(index:136, cost:10481)
+Initially pin J2_7 is assigned to pin 68(index:41, cost:10481)
+Initially pin J2_8 is assigned to pin 118(index:135, cost:10481)
+Initially pin J2_9 is assigned to pin 67(index:42, cost:10481)
+Initially pin J2_10 is assigned to pin 119(index:134, cost:10481)
+Initially pin J2_11 is assigned to pin 65(index:44, cost:10481)
+Initially pin J2_12 is assigned to pin 120(index:133, cost:10481)
+Initially pin J2_13 is assigned to pin 64(index:45, cost:10481)
+Initially pin J2_14 is assigned to pin 121(index:132, cost:10481)
+Initially pin J2_15 is assigned to pin 63(index:46, cost:10481)
+Initially pin J2_16 is assigned to pin 62(index:47, cost:10481)
+Initially pin J2_17 is assigned to pin 60(index:49, cost:10561)
+Initially pin J2_18 is assigned to pin 59(index:50, cost:10561)
+Initially pin J2_19 is assigned to pin 122(index:131, cost:10561)
+Initially pin J2_20 is assigned to pin 51(index:58, cost:10241)
+Initially pin J2_21 is assigned to pin 128(index:125, cost:10241)
+Initially pin Out21 is assigned to pin 102(index:7, cost:38081)
+Initially pin Out22 is assigned to pin 101(index:8, cost:38081)
+Initially pin Out23 is assigned to pin 100(index:9, cost:38081)
+Initially pin Out24 is assigned to pin 99(index:10, cost:38081)
+Initially pin Out25 is assigned to pin 98(index:11, cost:36161)
+Initially pin Out26 is assigned to pin 97(index:12, cost:36161)
+Initially pin Out27 is assigned to pin 96(index:13, cost:36161)
+Initially pin Out28 is assigned to pin 95(index:14, cost:36161)
+Initially pin Out29 is assigned to pin 92(index:17, cost:33921)
+Initially pin Out210 is assigned to pin 91(index:18, cost:33921)
+Initially pin Out211 is assigned to pin 90(index:19, cost:33921)
+Initially pin Out212 is assigned to pin 89(index:20, cost:32001)
+Initially pin Out213 is assigned to pin 88(index:21, cost:32001)
+Initially pin Out214 is assigned to pin 87(index:22, cost:32001)
+Initially pin Out215 is assigned to pin 86(index:23, cost:32001)
+Initially pin Out216 is assigned to pin 83(index:26, cost:33601)
+Initially pin Out217 is assigned to pin 82(index:27, cost:33601)
+Initially pin Out218 is assigned to pin 81(index:28, cost:33601)
+Initially pin Out219 is assigned to pin 80(index:29, cost:33601)
+Initially pin Out220 is assigned to pin 79(index:30, cost:31681)
+Initially pin Out221 is assigned to pin 78(index:31, cost:31681)
+Pin 10 is being cleared (used to be vpin J1_1)
+Pin 9 is being cleared (used to be vpin J1_2)
+Pin 8 is being cleared (used to be vpin J1_3)
+Pin 7 is being cleared (used to be vpin J1_4)
+Pin 23 is being cleared (used to be vpin J1_5)
+Pin 22 is being cleared (used to be vpin J1_6)
+Pin 21 is being cleared (used to be vpin J1_7)
+Pin 20 is being cleared (used to be vpin J1_8)
+Pin 19 is being cleared (used to be vpin J1_9)
+Pin 18 is being cleared (used to be vpin J1_10)
+Pin 17 is being cleared (used to be vpin J1_11)
+Pin 33 is being cleared (used to be vpin J1_12)
+Pin 32 is being cleared (used to be vpin J1_13)
+Pin 31 is being cleared (used to be vpin J1_14)
+Pin 30 is being cleared (used to be vpin J1_15)
+Pin 29 is being cleared (used to be vpin J1_16)
+Pin 28 is being cleared (used to be vpin J1_17)
+Pin 27 is being cleared (used to be vpin J1_18)
+Pin 26 is being cleared (used to be vpin J1_19)
+Pin 73 is being cleared (used to be vpin J1_20)
+Pin 111 is being cleared (used to be vpin J1_21)
+Pin 72 is being cleared (used to be vpin J2_1)
+Pin 114 is being cleared (used to be vpin J2_2)
+Pin 70 is being cleared (used to be vpin J2_3)
+Pin 116 is being cleared (used to be vpin J2_4)
+Pin 69 is being cleared (used to be vpin J2_5)
+Pin 117 is being cleared (used to be vpin J2_6)
+Pin 68 is being cleared (used to be vpin J2_7)
+Pin 118 is being cleared (used to be vpin J2_8)
+Pin 67 is being cleared (used to be vpin J2_9)
+Pin 119 is being cleared (used to be vpin J2_10)
+Pin 65 is being cleared (used to be vpin J2_11)
+Pin 120 is being cleared (used to be vpin J2_12)
+Pin 64 is being cleared (used to be vpin J2_13)
+Pin 121 is being cleared (used to be vpin J2_14)
+Pin 63 is being cleared (used to be vpin J2_15)
+Pin 62 is being cleared (used to be vpin J2_16)
+Pin 60 is being cleared (used to be vpin J2_17)
+Pin 59 is being cleared (used to be vpin J2_18)
+Pin 122 is being cleared (used to be vpin J2_19)
+Pin 51 is being cleared (used to be vpin J2_20)
+Pin 128 is being cleared (used to be vpin J2_21)
+Pin 102 is being cleared (used to be vpin Out21)
+Pin 101 is being cleared (used to be vpin Out22)
+Pin 100 is being cleared (used to be vpin Out23)
+Pin 99 is being cleared (used to be vpin Out24)
+Pin 98 is being cleared (used to be vpin Out25)
+Pin 97 is being cleared (used to be vpin Out26)
+Pin 96 is being cleared (used to be vpin Out27)
+Pin 95 is being cleared (used to be vpin Out28)
+Pin 92 is being cleared (used to be vpin Out29)
+Pin 91 is being cleared (used to be vpin Out210)
+Pin 90 is being cleared (used to be vpin Out211)
+Pin 89 is being cleared (used to be vpin Out212)
+Pin 88 is being cleared (used to be vpin Out213)
+Pin 87 is being cleared (used to be vpin Out214)
+Pin 86 is being cleared (used to be vpin Out215)
+Pin 83 is being cleared (used to be vpin Out216)
+Pin 82 is being cleared (used to be vpin Out217)
+Pin 81 is being cleared (used to be vpin Out218)
+Pin 80 is being cleared (used to be vpin Out219)
+Pin 79 is being cleared (used to be vpin Out220)
+Pin 78 is being cleared (used to be vpin Out221)
+Pin 14 is being cleared (used to be vpin Sel1)
+Pin 13 is being cleared (used to be vpin Sel2)
+Pin 12 is being cleared (used to be vpin Sel3)
+Pin 11 is being cleared (used to be vpin Sel4)
+
+
+Layer-by-layer logic: fast_io=1
+
+Layer 0
+	J1_1, RDF bits: 5, lab#=0
+	J1_2, RDF bits: 5, lab#=0
+	J1_3, RDF bits: 5, lab#=0
+	J1_4, RDF bits: 5, lab#=0
+	J1_5, RDF bits: 5, lab#=0
+	J1_6, RDF bits: 5, lab#=0
+	J1_7, RDF bits: 5, lab#=0
+	J1_8, RDF bits: 5, lab#=0
+	J1_9, RDF bits: 5, lab#=0
+	J1_10, RDF bits: 5, lab#=0
+	J1_11, RDF bits: 5, lab#=0
+	J1_12, RDF bits: 5, lab#=0
+	J1_13, RDF bits: 5, lab#=0
+	J1_14, RDF bits: 5, lab#=0
+	J1_15, RDF bits: 5, lab#=0
+	J1_16, RDF bits: 5, lab#=0
+	J1_17, RDF bits: 5, lab#=0
+	J1_18, RDF bits: 5, lab#=0
+	J1_19, RDF bits: 5, lab#=0
+	J1_20, RDF bits: 5, lab#=0
+	J1_21, RDF bits: 5, lab#=0
+	J2_1, RDF bits: 5, lab#=0
+	J2_2, RDF bits: 5, lab#=0
+	J2_3, RDF bits: 5, lab#=0
+	J2_4, RDF bits: 5, lab#=0
+	J2_5, RDF bits: 5, lab#=0
+	J2_6, RDF bits: 5, lab#=0
+	J2_7, RDF bits: 5, lab#=0
+	J2_8, RDF bits: 5, lab#=0
+	J2_9, RDF bits: 5, lab#=0
+	J2_10, RDF bits: 5, lab#=0
+	J2_11, RDF bits: 5, lab#=0
+	J2_12, RDF bits: 5, lab#=0
+	J2_13, RDF bits: 5, lab#=0
+	J2_14, RDF bits: 5, lab#=0
+	J2_15, RDF bits: 5, lab#=0
+	J2_16, RDF bits: 5, lab#=0
+	J2_17, RDF bits: 5, lab#=0
+	J2_18, RDF bits: 5, lab#=0
+	J2_19, RDF bits: 5, lab#=0
+	J2_20, RDF bits: 5, lab#=0
+	J2_21, RDF bits: 5, lab#=0
+	Out21, RDF bits: 3, lab#=0
+	Out22, RDF bits: 3, lab#=0
+	Out23, RDF bits: 3, lab#=0
+	Out24, RDF bits: 3, lab#=0
+	Out25, RDF bits: 3, lab#=0
+	Out26, RDF bits: 3, lab#=0
+	Out27, RDF bits: 3, lab#=0
+	Out28, RDF bits: 3, lab#=0
+	Out29, RDF bits: 3, lab#=0
+	Out210, RDF bits: 3, lab#=0
+	Out211, RDF bits: 3, lab#=0
+	Out212, RDF bits: 3, lab#=0
+	Out213, RDF bits: 3, lab#=0
+	Out214, RDF bits: 3, lab#=0
+	Out215, RDF bits: 3, lab#=0
+	Out216, RDF bits: 3, lab#=0
+	Out217, RDF bits: 3, lab#=0
+	Out218, RDF bits: 3, lab#=0
+	Out219, RDF bits: 3, lab#=0
+	Out220, RDF bits: 3, lab#=0
+	Out221, RDF bits: 3, lab#=0
+	Sel1, RDF bits: 5, lab#=0
+	Sel2, RDF bits: 5, lab#=0
+	Sel3, RDF bits: 5, lab#=0
+	Sel4, RDF bits: 5, lab#=0
+
+Layer 1
+
+Logic level 1 allocation.
